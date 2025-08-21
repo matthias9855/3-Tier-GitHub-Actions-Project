@@ -33,10 +33,6 @@ jobs:
     runs-on: Agent-1
     needs: compile
     steps:
-     - name: Clean up old artifacts
-       uses: actions/delete-artifact@v3
-       with:
-          name: 'gitleaks-results'  # Replace with your artifact name
      - name: Checkout code
        uses: actions/checkout@v4
 
