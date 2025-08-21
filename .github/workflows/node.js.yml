@@ -28,7 +28,11 @@ jobs:
         run: |
           cd api
           find . -name "*.js" -exec node --check {} +
-
+          
+      - name: Clean up old artifacts
+        uses: actions/delete-artifact@v3
+        with:
+         name: 'gitleaks-results'  # Replace with your artifact name
   gitleaks-scan:
     runs-on: Agent-1
     needs: compile
