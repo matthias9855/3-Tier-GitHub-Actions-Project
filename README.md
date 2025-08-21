@@ -9,7 +9,7 @@ This repository contains a simple Node.js API and a React client used for a user
 
    ```bash
    cd api && npm install
-   cd ../client && npm install
+   cd ../client && npm install 
    ```
 
 3. Start the API server:
