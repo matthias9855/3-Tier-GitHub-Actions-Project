@@ -35,6 +35,9 @@ jobs:
     steps:
      - name: Checkout code
        uses: actions/checkout@v4
+       
+     - name: Cleanup old gitleaks tmp
+       run: rm -f /tmp/gitleaks.tmp  
 
      - name: Gitleaks Setup
        uses: gitleaks/gitleaks-action@v2
